@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+body {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoUVWN4OeodWqEAeablxZYWLHFsx508FfJl6Jpqcc-6xKLyTre');
+    background-size: cover;
+}
+.gamepanel {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+/*    border: 1px solid #000;*/
+}
+.try {
+    position: absolute;
+    left: 2.3%;
+    width: 70px;
+    height: 70px;
+    border: 5px solid #000;
+    overflow: hidden;
+}
+.withTry > div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+        }
+.word {
+    position: relative;
+    display: flex;
+    margin-right: 30px;
+    padding: 30px 20px;
+    height: 100px;
+    min-width: 35%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+/*    border: 1px solid #000;*/
+    font: 40px Arial;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-image: -webkit-linear-gradient(top, #fff 40%, #98e5e5 80%);
+}
+.word::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -40px;
+    width: 75%;
+    height: 80%;
+/*    border: 1px solid #000;*/
+    border-radius: 50px;
+    background-image: -webkit-linear-gradient(top, #fff 50%, transparent 50%);
+}
+.word::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -110px;
+    width: 60%;
+    height: 200%;
+/*    border: 1px solid #000;*/
+    border-radius: 50%;
+    background-image: -webkit-linear-gradient(top, #fff 35%, transparent 35%);
+}
+.fieldWithWrong{
+    position: absolute;
+    display: flex;
+    right: 15%;
+    top: 325px;
+    min-width: 40%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font: bold 50px 'Special Elite', cursive;
+    border-radius: 20px;
+}
+.endGame {
+    display: none;
+    position: absolute;
+    right: 2%;
+    top: 325px;
+    width: 10%;
+    height: 100px;
+    border: 1px solid #000;
+    outline: none;
+    cursor: pointer;
+    font: 40px 'Special Elite', cursive;
+    border-radius: 20px;
+    background: transparent;
+}
+.container {
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+    height: 300px;
+    width: 70%;
+    padding: 20px;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    box-shadow: -15px 15px 10px -10px #000;
+    background: #fff;
+}
+.container > div {
+    display: flex;
+    margin-left: 1%;
+    width: 8%;
+    justify-content: center;
+    padding: 20px 0;
+    font: bold 20px Arial;
+    box-sizing: border-box;
+}
+.shadow {
+    border: 2px solid #000;
+    box-shadow: 3px 3px 5px 0 #000;
+}
+.insetshadow {
+    border: none;
+    box-shadow: inset 2px 2px 5px #000;
+}
+canvas {
+    display: block;
+    width: 500px;
+    height: 400px;
+    background-image: url(Tetrad19.png);
+    background-size: cover;
+}
+
+@media (max-width: 800px){
+    .container {
+                width: 100%;
+                height: 200px;
+                padding: 0 5px 0 0;
+    }
+    .container > div {
+                padding: 10px 0;
+                border-radius: 10px;
+    }
+}
